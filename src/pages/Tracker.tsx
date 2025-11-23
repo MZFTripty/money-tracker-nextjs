@@ -86,9 +86,8 @@ export default function Tracker() {
           <div className="bg-blue-50 p-4 rounded-2xl shadow-sm">
             <h2 className="text-sm text-gray-600">Balance</h2>
             <p
-              className={`text-2xl font-semibold ${
-                balance >= 0 ? "text-blue-600" : "text-red-600"
-              }`}
+              className={`text-2xl font-semibold ${balance >= 0 ? "text-blue-600" : "text-red-600"
+                }`}
             >
               ৳{balance}
             </p>
@@ -155,9 +154,8 @@ export default function Tracker() {
                     <td className="p-3">{t.date}</td>
                     <td className="p-3 font-medium">{t.category}</td>
                     <td
-                      className={`p-3 font-semibold ${
-                        t.type === "income" ? "text-green-600" : "text-red-500"
-                      }`}
+                      className={`p-3 font-semibold ${t.type === "income" ? "text-green-600" : "text-red-500"
+                        }`}
                     >
                       {t.type}
                     </td>
